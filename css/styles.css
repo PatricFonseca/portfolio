@@ -1,0 +1,53 @@
+body {
+  background-color: #202c39;
+  color: #fff;
+}
+
+.menu {
+}
+
+.menu ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  list-style: none;
+  /* flex-direction: column; */
+  /* justify-content: flex-end; */
+  /* align-items: center; */
+  font-size: 25px;
+
+  padding: 20px 10px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  height: 100%;
+}
+
+.projects-cards {
+  display: flex;
+  background-color: #283845;
+  padding: 15px 0;
+}
+
+.project-img {
+  width: 300px;
+  height: 230px;
+}
+
+.project-card {
+  padding-left: 25px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+}
