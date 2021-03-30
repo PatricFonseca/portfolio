@@ -4,8 +4,9 @@
 
 :root {
 	/* --main: #202c39; */
+	--background: #2D2D2D;
 	--main: #03071e;
-	--content: #fffdf7;
+	--content: #f8f8f8;
 	--title: #08021b;
 	--text: #000;
 	--orange: #f29559;
@@ -15,18 +16,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto+Slab&display=swap");
 
-body {
-	/* background-color: var(--main); */
-	background-image: url("../img/fundo-dark.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
+body {	
 	color: #fff;
+	background-color: var(--background);
+	background-image: url("../img/firewatch.jpg");	
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 /* Teste................................................................ */
 .hero {
 	display: flex;
-	height: 500px;
+	height: 450px;
 }
 /* .hero p {
 	margin: auto;
@@ -96,11 +99,17 @@ a {
 } */
 
 /* Fim TEste ******************************** */
+.menu {
+	position: sticky;
+	top: 0;
+
+	background: rgba(0, 0, 0, 0.5);	
+}
 
 .menu ul {
 	display: flex;
 	justify-content: flex-end;
-	background: rgba(0, 0, 0, 0.5);
+	
 }
 
 .menu li {
@@ -135,6 +144,10 @@ a {
 	border: 1px solid var(--orange);
 }
 
+.scrolled{
+	background-color:rgba(0, 0, 0);
+}
+
 .title {
 	/* padding-top: 20px; */
 	font-size: 39px;
@@ -147,10 +160,6 @@ a {
 	margin: 0 auto;
 	/* width: 100%; */
 	width: 960px;
-}
-
-main {
-	/* height: 100%; */
 }
 
 .skills {
@@ -169,6 +178,7 @@ main {
 }
 
 .list-skills li {
+	list-style-type: none;
 	padding: 10px 35px;
 }
 
@@ -197,8 +207,9 @@ main {
 }
 
 .projects-cards {
-	display: flex;
+	display: flex;	
 	padding: 15px 0px;
+	width: 100%;
 }
 
 .project-img {
@@ -210,7 +221,8 @@ main {
 }
 
 .project-card {
-	width: 250px;
+	/* width: 250px; */
+	width: 40rem;
 	/* padding: 10px; */
 	/* padding-left: 25px; */
 	border: 8px solid gray;
@@ -262,10 +274,6 @@ footer {
 	color: var(--orange);
 	font-size: 3.2rem;
 	text-shadow: #000;
-}
-
-#myBtn:hover {
-  /* background-color: #555; Add a dark-grey background on hover */
 }
 
 .slide-top {
